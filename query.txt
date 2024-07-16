@@ -1,0 +1,111 @@
+TABLE users {
+  id Number
+  name String
+  email String
+  password String
+  addressLine1 String
+  addressLine2 String
+  state String
+  city string
+  town string
+  pincode Number
+  mobileNumber Number
+  experience Number
+  aadharNumber Number
+  role String
+  batchId Number
+  geekCoins Number
+  createdAt timestamp
+  updatedAt timestamp
+}
+
+TABLE codekata {
+  id Number
+  name String
+  difficultyLevel String
+  decscription string
+  winnableCoins Number
+  category Number
+  testCases String
+  createdAt timestamp
+  updatedAt timestamp
+}
+
+TABLE webkata {
+  id Number
+  name String
+  difficultyLevel String
+  decscription string
+  winnableCoins Number
+  category Number
+  testCases String
+  createdAt timestamp
+  updatedAt timestamp
+}
+
+TABLE submissions {
+  id Number
+  userId Number
+  taskId Number
+  marks Number
+  type String 
+  createdAt timestamp
+  updatedAt timestamp
+}
+
+TABLE attendence {
+  id Number
+  studentId Number
+  sessionId Number
+  sessionType String
+  isPresent bool
+  isTaskSubmissionNeeded bool
+  isTaskSubmitted bool
+  createdDate timestamp
+  updatedDate timestamp
+}
+
+TABLE topics {
+  id Number
+  name String
+  scheduledDate timestamp
+  content String
+  preread string
+  sessionDetails string
+  taskDetails string
+  batchId Number
+  createdDate timestamp
+  updatedDate timestamp
+}
+
+TABLE feedback {
+  id Number
+  mentorId Number
+  topicId Number
+  sessionRating Number
+  mentorRating Number
+  sessionFeedback String
+  mentorFeedback String
+}
+
+TABLE drives {
+  id Number
+  companyName String
+  driveDate timestamp
+  createdDate timestamp
+  updatedDate timestamp
+}
+
+TABLE batches {
+  id Number
+  name String
+  courseType Number
+  batchType String
+  lanuage String
+  batchStartTime timestamp
+  batchEndTime timestamp
+  mentors Array
+  coordinatorId Number
+  createdAt timestamp
+  updatedAt timestamp
+}
